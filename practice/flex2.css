@@ -43,18 +43,17 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-
+    /* border: palevioletred solid; */
 }
-.introduction .item .content .top{
-    align-self: start;
-    
+.introduction .item .left .top{
+    /* border: rgb(38, 0, 255) solid; */
 }
 .introduction .item .left .p{
-    height:10px;
+
     text-align: end;
+    /* border: red solid; */
 }
 .introduction .item .right{
     width: 40%;
