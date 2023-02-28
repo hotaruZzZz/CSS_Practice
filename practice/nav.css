@@ -27,6 +27,13 @@ nav a{
     text-decoration: none;
 
 }
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .wrap{
     display: flex;
     flex-wrap: wrap;
