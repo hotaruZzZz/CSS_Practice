@@ -1,0 +1,13 @@
+
+.test{
+    display: flex;
+    justify-content: center;    
+}
+.box{
+    background: #e3c8c8;
+    color: rgb(50, 35, 35);
+    width: 100px;
+    border: rgb(227, 217, 174) 10px solid;
+    padding: 100px;
+    margin: 20px;
+}
