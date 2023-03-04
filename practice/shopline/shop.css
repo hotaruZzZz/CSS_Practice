@@ -207,4 +207,38 @@ footer{
     background-color: #0f1220;
     width: 100%;
     height: 500px;
+
+    justify-content: center;
+}
+footer .wrap{
+    width: 80%;
+    display: flex;
+    color: white;
+}
+footer .wrap .top{
+    width: 100%;
+    display: flex;
+    
+    color: white;
+}
+footer .wrap .mid{
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    width: 100%;
+    display: flex;
+}
+footer .wrap .mid ul{
+    margin: 0 3em;
+    list-style: none;
+}
+footer .wrap .top ul{
+    
+    display: flex;
+    list-style: none;
+}
+footer .wrap .top li{
+    margin: 0 10px;
+}
+footer .wrap .buttom ul{
+    list-style: none;
 }
