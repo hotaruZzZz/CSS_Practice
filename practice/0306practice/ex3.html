@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tag{
+            background-color: #fa0;
+            width: fit-content;
+            color: #ffffff;
+            position: relative;
+            font-size: 100px;
+        }
+        .tag::after{
+            content: '';
+            position: absolute;
+            left:0;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-left: 40px solid
+            #0000;
+            border-top: 20px solid #f60;
+
+        }
+        .test{
+            width: 0;
+            height: 0;
+            border-top: red solid 100px;
+            border-left: rgb(25, 0, 255) solid 100px;
+            border-bottom: rgb(0, 255, 26) solid 100px;
+            border-right: rgb(217, 255, 0) solid 100px;
+        }
+        .arrow{
+            width: 300px;
+            height: 300px;
+            background-image: linear-gradient(to right top,#0000 50%,rgb(85, 128, 185) 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="tag">
+        Leo
+    </div>
+    <br>
+    <div class="test">
+
+    </div>
+
+    <div class="arrow">
+
+    </div>
+</body>
+</html>

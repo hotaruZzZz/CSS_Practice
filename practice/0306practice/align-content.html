@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            height: 700px;
+            background-color: #cacaca;
+            align-content: space-between;
+            
+        }
+        .flex .item{
+            width: 300px;
+            height: 300px;
+            font-size: 50px;
+            text-align: center;
+            background-color: #1e2641;
+            color: #ffffff;
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+            background-color: #414c7c;
+            color: #ffffff;
+            border-radius: 1px;
+            border-style: none;
+            width: 90px;
+            height: 30px;
+        }
+        button:hover{
+            background-color: #171f45;
+        }
+        .select{
+            display: flex;
+            margin: 10px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $("button").click(function() {
+        var fired_button = $(this).val();
+        alert(fired_button);
+    });
+    </script>
+</head>
+<body>
+    <div class="flex" id="flex">
+        <div class="item" id="item1">
+            1
+        </div>
+        <div class="item" id="item2">
+            2
+        </div>
+        <div class="item" id="item3">
+            3
+        </div>
+        <div class="item" id="item4">
+            4
+        </div>
+        <div class="item" id="item5">
+            5
+        </div>
+    </div>
+    
+    <div id="div-element">Hey there!!</div>
+    <h4>align-content value</h4>
+    <div class="select">
+        <button id="start"  value="start">start</button>
+        <button id="end"  value="end">end</button>
+        <button id="center"  value="center">center</button>
+        <button id="space-between"  value="space-between">space-between</button>
+        <button id="space-around"  value="space-around">space-around</button>
+
+        
+    </div>
+
+</body>
+</html>

@@ -39,16 +39,16 @@ nav li a:hover{
     text-align: center;
 }
 .wrap{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 1% 10%;
+    margin: 10px 10%;
     align-content: space-between;
-    gap: 1em;
+    gap: 10px;
 }
 .wrap .item{
-    width: 400px;
+    width: 410px;
     background-color: #f5f4f4;
 }
 .wrap .item .content{
@@ -56,6 +56,18 @@ nav li a:hover{
     width: 400px;
 }
 
+.study{
+margin: auto;
+display: flex;
+
+}
+.study img{
+    transition: 1s;
+}
+.study img:hover{
+    margin: 0;
+    flex-grow: 2;
+}
 .introduction{
     width: 100%;
     height: 300px;

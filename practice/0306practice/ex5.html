@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            width: 300px;
+            vertical-align: top;
+            position: relative;
+            margin: 100px;
+            overflow: hidden;
+        }
+        .card .text{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            /* background-color: #000800; */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            padding: 15px;
+            text-align: center;
+
+        }
+        .card img:hover{
+            width: 100%;
+            vertical-align: top;
+            transform: scale(1);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://picsum.photos/300/200/?random=10">
+        <div class="text">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut sint ducimus eos adipisci suscipit, magnam, molestias minima delectus voluptatibus eligendi porro nostrum repellendus voluptatum quas libero, ratione officiis sit? Quos.</p>
+        </div>
+    </div>
+</body>
+</html>

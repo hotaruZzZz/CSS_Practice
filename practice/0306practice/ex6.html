@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+            display: grid;
+            grid-template-columns: 200px repeat(4, 50px);
+            grid-template-rows: repeat(4,80px ); /* repeat(數量,份) => 份/數量 */ 
+            gap:4px; 
+            /* justify-content: space-between;             */
+            /* align-content: space-between; */
+            justify-items: center;
+            justify-content: space-around;
+            
+        }
+        .item{
+            font-size: 32px;
+            color: white;
+            
+        }
+        .item1{
+            background-color: #805252;
+            justify-self: end;
+            width: 50%;
+            
+        }
+        .item2{
+            background-color: #b77943;
+            
+
+        }
+        .grid{
+            display: grid;
+            margin: auto;
+            width: 1200px;
+            height: 400px;
+            background-color: #ccc;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1,1fr);
+        }
+        .grid .item{
+            display: flex;
+            /* justify-content: space-around; */
+        }
+        .item .content{
+            width: 66.666%;
+            padding: 10px 20px 0;  
+            box-sizing: border-box;
+        }
+        .item .pic{
+            width: 33.3333%;
+        }
+        .grid img{
+            border-radius: 50%;
+        }
+        .grid .item h3{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="item item1">
+            1
+            
+        </div>
+        <div class="item item2">
+            2
+        </div>
+    </div>
+    <br>
+    <div class="grid">
+        <div class="item">
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut modi eius ad pariatur laboriosam nobis veniam</p>
+                <h3>Ritsu</h3>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/200/200/?random=10">
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut modi eius ad pariatur laboriosam nobis veniam</p>
+                <h3>Mao</h3>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/200/200/?random=12">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

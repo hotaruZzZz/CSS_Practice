@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.card{
+    width: 300px;
+    border: #581c1c solid;
+    background-color: #c6c6c6;
+    position: relative;
+}
+.card img{
+    vertical-align: top;
+
+}
+.text{
+    /* background-color: #0008; */
+    background-image: linear-gradient(to top, #000 70%, #0000);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+    color: #ffff;
+}
+.card:hover .text{
+    background-color: #fa08;
+}
