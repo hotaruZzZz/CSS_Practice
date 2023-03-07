@@ -9,15 +9,16 @@
 
 }
 nav{
-    position: fixed;
+    position: sticky;
     float: left;
-    background-color: #fff;
+    background-color: #eceef4;
     width: 100%;
     height: 80px;
     top:0;
+    z-index: 1;
 }
 nav .ul{
-    margin: 10px;
+    margin: 5px 10px;
     gap:10px;
     
 }
@@ -25,6 +26,19 @@ nav li{
     display: flex;
     justify-content: center;
 
+}
+.login{
+    font-size: small;
+    background-color: #eceef4;
+}
+.login ul{
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+}
+.login  li{
+    list-style: none;
+    margin: 10px;
 }
 nav a{
     display: block;
@@ -40,12 +54,13 @@ nav a{
     border-radius: 10px 10px 10px 10px ;
 }
 .head{
-    margin: 80px 0;
+    /* margin: 80px 0; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: #eceef4;
     justify-content: center;
+    z-index: 2;
 }
 .head .left{
     margin: 10px;
@@ -67,19 +82,26 @@ h2{
     margin: 10px;
 }
 .head button{
-    background-color: #2a71e3;
+    
     width: 300px;
     height: 50px;
-    color: white;
     border-radius: 10px 10px 10px 10px ;
     border-style: none;
 }
-.head button:hover{
+button{
+    background-color: #2a71e3;
+    color: white;
+    border-radius: 10px 10px 10px 10px ;
+    border-style: none;
+    margin: 10px 0;
+}
+button:hover{
+    transition: 0.5s;
     background-color: #09172e;
 }
 .content{
     background-color: #f4f4f4;
-    margin: 100px 0;
+    margin: 100px 0 10px 0;
     padding: 100px 0;
     width: 100%;
     display: flex;
@@ -91,6 +113,7 @@ h2{
 .content h2{
     width: 30%;
     margin: 40px 0;
+    color: #052855;
 }
 .wrap{ 
     width: 100%;
@@ -107,6 +130,9 @@ h2{
     width: 80%;
     height: 350px;
     margin: 20px 0;
+}
+.wrap h2{
+    color: #052855;
 }
 .wrap .item:nth-child(even){
     /* border: #520505 solid; */
@@ -204,6 +230,21 @@ h2{
 }
 .brand p{
     width: 50%;
+}
+.free{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #EBF1F8;
+}
+.free button{
+    width: 200px;
+    height: 50px;
+    margin: 50px 0;
 }
 footer{
     background-color: #00142d;

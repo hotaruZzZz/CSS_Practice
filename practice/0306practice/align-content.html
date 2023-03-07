@@ -18,7 +18,7 @@
             height: 400px;
             background-color: #cacaca;
             align-content: space-between;
-            
+            justify-content: center;
         }
         .flex .item{
             width: 150px;
@@ -39,11 +39,20 @@
             height: 30px;
         }
         button:hover{
+            
             background-color: #171f45;
         }
-        .select{
+        .select1{
+            margin: 10px;
+            width: 100%;
+        }
+        .align_content{
+            margin: 10px;
+        }
+        .select2{
             display: flex;
             margin: 10px;
+            width: 100%;
         }
     </style>
 
@@ -68,17 +77,27 @@
         </div>
     </div>
     
-    <p id="p">a</p>
-    <h4>align-content value</h4>
-    <div class="select">
-        <button id="start"  value="start">start</button>
-        <button id="end"  value="end">end</button>
-        <button id="center"  value="center">center</button>
-        <button id="space-between"  value="space-between">space-between</button>
-        <button id="space-around"  value="space-around">space-around</button>
-
-        
+    
+    
+    <div class="select1">
+        <h4>align-content value:</h4><p id="p">space-between</p>
+        <h4>justify-content value:</h4><p id="p">center</p>
+        <div class="align_content">
+            <button id="start"  value="start">start</button>
+            <button id="end"  value="end">end</button>
+            <button id="center"  value="center">center</button>
+            <button id="space-between"  value="space-between">space-between</button>
+            <button id="space-around"  value="space-around">space-around</button>  
+        </div>
+        <div class="select2">
+            <button id="start"  value="start">start</button>
+            <button id="end"  value="end">end</button>
+            <button id="center"  value="center">center</button>
+            <button id="space-between"  value="space-between">space-between</button>
+            <button id="space-around"  value="space-around">space-around</button>  
+        </div>
     </div>
+
     <script>
         // 為每個按鈕註冊監聽器
         var buttons = document.getElementsByTagName("button");
