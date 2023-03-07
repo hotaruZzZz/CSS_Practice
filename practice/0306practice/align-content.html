@@ -14,15 +14,15 @@
             margin: auto;
             display: flex;
             flex-wrap: wrap;
-            width: 1200px;
-            height: 700px;
+            width: 600px;
+            height: 400px;
             background-color: #cacaca;
             align-content: space-between;
             
         }
         .flex .item{
-            width: 300px;
-            height: 300px;
+            width: 150px;
+            height: 150px;
             font-size: 50px;
             text-align: center;
             background-color: #1e2641;
@@ -46,13 +46,8 @@
             margin: 10px;
         }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    $("button").click(function() {
-        var fired_button = $(this).val();
-        alert(fired_button);
-    });
-    </script>
+
+
 </head>
 <body>
     <div class="flex" id="flex">
@@ -73,7 +68,7 @@
         </div>
     </div>
     
-    <div id="div-element">Hey there!!</div>
+    <p id="p">a</p>
     <h4>align-content value</h4>
     <div class="select">
         <button id="start"  value="start">start</button>
@@ -84,6 +79,25 @@
 
         
     </div>
-
+    <script>
+        // 為每個按鈕註冊監聽器
+        var buttons = document.getElementsByTagName("button");
+        var click = "";
+        var p = document.getElementById("p");
+        var flex = document.getElementById("flex");
+        
+        
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function() {
+            // 使用this來引用被點擊的按鈕
+            var clickedButtonValue = this.value;
+            click = clickedButtonValue;
+            console.log(clickedButtonValue);
+            p.innerHTML = click;
+            flex.style.alignContent = click;
+            });
+        }
+        
+    </script>
 </body>
 </html>
