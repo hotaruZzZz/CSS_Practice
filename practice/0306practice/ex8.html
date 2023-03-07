@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            width: 600px;
+            height: 600px;
+            background-color: #ccc;
+            display: grid;
+            grid-template: repeat(8, 1fr) / repeat(4, 1fr);
+        }
+        .item{
+            background-color: red;
+            grid-area: 4 / 2 / span 2 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">
+
+        </div>
+    </div>
+</body>
+</html>

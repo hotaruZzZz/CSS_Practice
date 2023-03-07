@@ -1,0 +1,19 @@
+<button id="button1" value="Value 1">Button 1</button>
+<button id="button2" value="Value 2">Button 2</button>
+<button id="button3" value="Value 3">Button 3</button>
+
+<script>
+  // 為每個按鈕註冊監聽器
+  var buttons = document.getElementsByTagName("button");
+  var click = "";
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+      // 使用this來引用被點擊的按鈕
+      var clickedButtonValue = this.value;
+      click = clickedButtonValue;
+      console.log(clickedButtonValue);
+      alert(click);
+    });
+  }
+  
+</script>

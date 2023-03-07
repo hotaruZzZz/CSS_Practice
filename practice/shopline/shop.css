@@ -19,6 +19,7 @@ nav{
 nav .ul{
     margin: 10px;
     gap:10px;
+    
 }
 nav li{
     display: flex;
@@ -134,6 +135,7 @@ h2{
     width: 40%; 
 }
 .wrap .item .left ul{
+    /* border: saddlebrown solid; */
     list-style: none;
 }
 .wrap .item .left .list .list_content ul li::before{
