@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 960px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: solid saddlebrown;
+        }
+
+        .item{
+            width: 21%;
+            height: 100px;
+            margin: 1.5%;
+            background-color: #393f64;
+            border: 2px solid;
+            padding-top: 10%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<!-- 
+    父層寬度 w960
+    子層4欄 w240
+    子層欄間距 30，兩方外側各15 >>>> 1.5625%
+    子層  
+-->
+<body>
+    <div class="wrap">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
