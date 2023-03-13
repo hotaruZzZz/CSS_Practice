@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #d5d5d5;
+            padding: 6px;
+            position: relative;
+        }
+        .logo{
+            width: 80px;
+            height: 40px;
+        }
+        .logo img{
+            vertical-align: top;
+        }
+        .hb{
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;  
+        }   
+        .hb span{
+            width: 80%;
+            height: 2px;
+            background-color: #ff0;
+        }
+
+        .main-nav{
+            /* display: none; */
+            position: absolute;
+            background-color: #fa0;
+            left: 0;
+            width: 90%;
+            top: 100%;
+        }
+        .main-nav a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main-nav a + a {
+            border-top: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo" >
+            <a href="#">
+                <img src="https://fakeimg.pl/80x40/200">
+            </a>
+        </div>
+
+        <div class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chu</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        .wrap{
+            display: flex;
+            position: relative;
+            margin: auto;
+            
+        }
+        .wrap .pic{
+            width: 100%;
+        }
+
+        .wrap .title{
+            color: #ffffff;
+            background-color: #39393974;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+        }
+        .wrap .title:hover{
+            background-color: #fbcd0074;
+        }
+        .item{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+        }
+        .item .title{
+            align-content: center;
+        }
+        .item .pic img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="wrap">
+                    <div class="title">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="pic">
+                        <img src="https://picsum.photos/200/300/?random=10">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="wrap">
+                    <div class="pic">
+                        <img src="https://picsum.photos/200/300/?random=10">
+                    </div>
+                    <div class="title"> 
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="wrap">
+                    <div class="pic">
+                        <img src="https://picsum.photos/200/300/?random=10">
+                    </div>
+                    <div class="title"> 
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+                <div class="item">
+                    
+                    <div class="pic col-12 col-md-6">
+                        <img src="https://picsum.photos/200/200/?random=10">
+                    </div>
+                    <div class="title col-12 col-md-6">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            
+            
+                <div class="item">
+                    
+                    <div class="pic col-12 col-md-6">
+                        <img src="https://picsum.photos/200/200/?random=10">
+                    </div>
+                    <div class="title col-12 col-md-6">
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+</body>
+</html>
